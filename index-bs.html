@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Eventos Mockup - Bootstrap</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <style>
+      body {
+        background-color: #fefefe;  
+      }
+      div { background: #fff; }
+      
+      div#header,
+      div#header div 
+      {
+        background-color: #5ac87c;
+        height: 50px;
+        line-height: 45px;
+      }
+      div#header {
+        /* border: 2px solid #41a34f; */
+        border-bottom: 1px solid #41a34f;
+        border-top: none;
+        box-shadow: 0 0 10px #888;
+      }
+      div#header-username .text, div#header-password .text {
+        border: 1px solid #41a34f;
+        width: 160px;
+        margin-top: 12px;
+      }
+      div#header-submit button {
+        font-size: 8pt;
+        margin-top: 10px;
+      }
+      div#content,
+      div#content div {
+        background-color: #fafafa;
+      }
+      div#content {
+        /* border: 2px solid #d3d3d3; */
+        border-top: 1px solid #d3d3d3;
+        box-shadow: 0 0 10px #888;
+      }
+      div#content div.welcome h1 {
+        margin-left: 15px;
+        margin-top: 15px;
+      }
+      div#content div.sign-up-form {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      span.text-logo {
+        color: #fff;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 24pt;
+        margin-left: 15px;
+        text-shadow: #444 1px 1px 1px;
+      }
+      form#sign-up {
+        margin-top: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="header" class="row">
+        <div class="span12">
+          <div class="row">
+            <div id="header-logo" class="span2">
+              <!-- <img src="images/logo.png" alt="eventos" />-->
+              <span class="text-logo">eventos</span>
+            </div>
+            <div id="header-nav" class="span5">
+
+            </div>
+            <div id="header-user" class="span5">
+              <!-- either login controls or sign out/profile links -->
+              <form id="login-form" action="#" method="post" class="form-inline">
+                <input type="text" id="login-user" placeholder="email address" class="span2">
+                <input type="password" id="login-password" placeholder="password" class="span2">
+                <button type="submit" class="btn">Sign in</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="content" class="row">
+        <div class="span12">
+          <div class="row">
+            <div class="span7 welcome">
+                <h1>welcome<br>to<br>eventos.</h1>
+            </div>
+            <div class="span5">
+              <div class="sign-up-form">
+                <h2>create a new account to<br>begin planning your event.</h2>
+                <form id="sign-up" method="post" action="#">
+                  <p>
+                    <label for="sign-up-email">email address</label>
+                    <input id="sign-up-email" type="text" class="text">
+                  </p>
+                  <p>
+                    <label for="sign-up-password">password</label>
+                    <input id="sign-up-password" type="password" class="text">
+                  </p>
+                  <p>
+                    <label for="sign-up-confirm">confirm</label>
+                    <input id="sign-up-confirm" type="password" class="text">
+                  </p>
+                  <p>
+                    <button type="submit" class="btn btn-success btn-large">
+                      Sign up
+                    </button>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        
+      </div>
+    </div>
+  </body>
+</html>
